@@ -26,9 +26,9 @@ class Box {
         translate(this.pos.x, this.pos.y, this.pos.z);
         noFill();
         strokeWeight(2);
-        var rValue = map(this.pos.x, -boxWidth_x/2, boxWidth_x/2, 10, 255);
-        var gValue = map(this.pos.y, -boxWidth_y/2, boxWidth_y/2, 10, 255);
-        var bValue = map(this.pos.z, -boxWidth_x/2, boxWidth_x/2, 10, 255);
+        var rValue = map(this.pos.x, -boxWidth/2, boxWidth/2, 10, 255);
+        var gValue = map(this.pos.y, -boxWidth/2, boxWidth/2, 10, 255);
+        var bValue = map(this.pos.z, -boxWidth/2, boxWidth/2, 10, 255);
         stroke(rValue, gValue, bValue, 255);
         box(this.r);
         pop();
