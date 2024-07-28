@@ -1,10 +1,13 @@
 var a = 0.0;
+var background_height = 1080;
+var background_width = 1920;
 var sponge = [];
+var boxWidth = 400;
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  createCanvas(background_width, background_height, WEBGL);
   normalMaterial();
-  var b = new Box(0, 0, 0, 300);
+  var b = new Box(0, 0, 0, boxWidth);
   sponge.push(b);
 }
 
@@ -31,5 +34,5 @@ function draw() {
     sponge[i].show();
   }
 
-  a += 0.01;
+  a += 0.03;
 }
