@@ -24,13 +24,11 @@ class Box {
     show(){
         push();
         translate(this.pos.x, this.pos.y, this.pos.z);
+        stroke(255);
+        noStroke();
         noFill();
-        strokeWeight(2);
-        var rValue = map(this.pos.x, -boxWidth/2, boxWidth/2, 10, 255);
-        var gValue = map(this.pos.y, -boxWidth/2, boxWidth/2, 10, 255);
-        var bValue = map(this.pos.z, -boxWidth/2, boxWidth/2, 10, 255);
-        stroke(rValue, gValue, bValue, 255);
-        box(this.r);
+        fill(255);
+        box(this.size);
         pop();
     }
 }
