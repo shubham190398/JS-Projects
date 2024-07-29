@@ -1,8 +1,8 @@
 var a = 0.0;
-var background_height = 1080;
-var background_width = 1920;
+var background_height = 1440;
+var background_width = 2560;
 var sponge = [];
-var boxWidth = 400;
+var boxWidth = 600;
 
 function setup() {
   createCanvas(background_width, background_height, WEBGL);
