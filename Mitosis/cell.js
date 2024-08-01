@@ -1,5 +1,3 @@
-import { Vector } from "../../../.vscode/extensions/samplavigne.p5-vscode-1.2.15/p5types/index";
-
 class Cell{
     constructor(){
         this.pos = createVector(random(width), random(height));
@@ -7,7 +5,7 @@ class Cell{
     }
 
     move(){
-        var vel = Vector.random2D();
+        var vel = createVector(1, 1);
         this.pos.add(vel);
     }
 
